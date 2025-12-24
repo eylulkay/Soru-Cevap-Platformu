@@ -1,0 +1,372 @@
+/* Tema Renkleri: Koyu Gri (#404040) ve Yeşil (#1b7808) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+    color: #404040;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/* Header Stilleri */
+header {
+    background: linear-gradient(135deg, #404040 0%, #2d2d2d 100%);
+    color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 4px solid #1b7808;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+header nav {
+    float: right;
+    margin-top: 5px;
+}
+
+header .highlight {
+    color: #1b7808;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header .current a,
+header a:hover {
+    color: #1b7808;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(27, 120, 8, 0.5);
+    transition: all 0.3s ease;
+}
+
+/* Ana İçerik */
+#main-content {
+    padding: 40px;
+    background: #ffffff;
+    margin: 30px 0;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.6s ease;
+    min-height: 400px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#main-content h2 {
+    color: #1b7808;
+    font-size: 32px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #1b7808;
+    padding-bottom: 10px;
+    animation: slideInLeft 0.5s ease;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#main-content h3 {
+    color: #404040;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+#main-content h4 {
+    color: #404040;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#main-content p {
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+#main-content ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+#main-content li {
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
+
+/* Form Stilleri */
+.form-group {
+    margin-bottom: 20px;
+    animation: fadeIn 0.5s ease;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #404040;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1b7808;
+    box-shadow: 0 0 10px rgba(27, 120, 8, 0.3);
+    transform: translateY(-2px);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Buton Stilleri */
+.button_1 {
+    background: linear-gradient(135deg, #1b7808 0%, #145a06 100%);
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(27, 120, 8, 0.3);
+}
+
+.button_1:hover {
+    background: linear-gradient(135deg, #145a06 0%, #0d3a04 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(27, 120, 8, 0.4);
+}
+
+.button_1:active {
+    transform: translateY(0);
+}
+
+/* FAQ Container */
+.faq-container {
+    margin-top: 20px;
+}
+
+.faq-item {
+    background: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-left: 4px solid #1b7808;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.faq-item:hover {
+    background: #f0f0f0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transform: translateX(5px);
+}
+
+.faq-item h3 {
+    color: #1b7808;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    color: #555;
+    margin: 0;
+}
+
+/* Footer Stilleri */
+footer {
+    padding: 30px;
+    margin-top: auto;
+    color: #ffffff;
+    background: linear-gradient(135deg, #404040 0%, #2d2d2d 100%);
+    text-align: center;
+    border-top: 4px solid #1b7808;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+    animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header #branding,
+    header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header li {
+        padding: 0 10px;
+    }
+
+    #main-content {
+        padding: 20px;
+    }
+
+    #main-content h2 {
+        font-size: 24px;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+/* Scroll Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hover Efektleri */
+a {
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1b7808;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #145a06;
+}
